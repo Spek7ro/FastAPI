@@ -1,11 +1,17 @@
-from typing import Union
-
 from fastapi import FastAPI
 
 app = FastAPI()
 
+# Iniciar el servidor uvicorn main:app --reload
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+# Hola mundo con fast api
+@app.get("/") 
+async def root():
+    return {"Hello": "World",
+            "Hola": "Mundo",
+            "Bienvenido": "a FastAPI"
+            }
+
+
+
 
