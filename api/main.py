@@ -12,6 +12,8 @@ async def root():
             "Bienvenido": "a FastAPI"
             }
 
-
+@app.get("/url") 
+async def url():
+    return {"url": "https://fastapi.tiangolo.com/"}
 
 
