@@ -35,7 +35,7 @@ async def user(id: int):
 
 # Obtener un user por query
 # eje: http://localhost:8000/userquery/?id=1
-@app.get("/user/")
+@app.get("/user/") 
 async def user(id: int):
     return search_user(id)
 
